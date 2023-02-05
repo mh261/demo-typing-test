@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing Test Word</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="background">
+    <header class="textHeader">
+        <h1>Typing Test</h1>
+    </header>
+    <div class="background">
+        <!-- Word & Input -->
+        <div class="row">
+            <div class="">
+                <h3 class="textInfo">Type The Given Word Within
+                    <span class="textSeconds" id="seconds">5</span> Seconds:
+                </h3>
+                <h1 class="keyword" id="current-word"></h1>
+                <input type="text" placeholder="Start typing..." id="word-input"
+                    autofocus>
+                <h4 class="mt-3" id="message"></h4>
+
+                <!-- Time & Score Columns -->
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h3>Time Left:
+                            <span id="time">0</span>
+                        </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Score:
+                            <span id="score">0</span>
+                        </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" onClick="restart()">Restart</button>
+                    </div>
+                    <br><br>
+                    <div class="col">
+                        <h3>High Score:
+                            <span id="highscore">0</span>
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- KeyBoard -->
+                <div>
+                    <div class="kb" >
+                        <div id="key_101" class="key key_two key_tilde ut">
+                            <div class="key_top">~</div>
+                            <div class="key_bottom">`</div>
+                        </div>
+                        <div id="key_102" class="key key_two key_1 ut">
+                            <div class="key_top">!</div>
+                            <div class="key_bottom">1</div>
+                        </div>
+                        <div id="key_103" class="key key_two key_2 nhan">
+                            <div class="key_top">@</div>
+                            <div class="key_bottom">2</div>
+                        </div>
+                        <div id="key_104" class="key key_two key_3 giua">
+                            <div class="key_top">#</div>
+                            <div class="key_bottom">3</div>
+                        </div>
+                        <div id="key_105" class="key key_two key_4 tro-trai">
+                            <div class="key_top">$</div>
+                            <div class="key_bottom">4</div>
+                        </div>
+                        <div id="key_106" class="key key_two key_5 tro-trai">
+                            <div class="key_top">%</div>
+                            <div class="key_bottom">5</div>
+                        </div>
+                        <div id="key_107" class="key key_two key_6 tro-phai">
+                            <div class="key_top">^</div>
+                            <div class="key_bottom">6</div>
+                        </div>
+                        <div id="key_108" class="key key_two key_7 tro-phai">
+                            <div class="key_top">&amp;</div>
+                            <div class="key_bottom">7</div>
+                        </div>
+                        <div id="key_109" class="key key_two key_8 giua">
+                            <div class="key_top">*</div>
+                            <div class="key_bottom">8</div>
+                        </div>
+                        <div id="key_110" class="key key_two key_9 nhan">
+                            <div class="key_top">(</div>
+                            <div class="key_bottom">9</div>
+                        </div>
+                        <div id="key_111" class="key key_two key_0 ut">
+                            <div class="key_top">)</div>
+                            <div class="key_bottom">0</div>
+                        </div>
+                        <div id="key_112" class="key key_two key_- ut">
+                            <div class="key_top">_</div>
+                            <div class="key_bottom">-</div>
+                        </div>
+                        <div id="key_113" class="key key_two key_= ut">
+                            <div class="key_top">+</div>
+                            <div class="key_bottom">=</div>
+                        </div>
+                        <div id="key_114" class="key key_back">Back</div>
+                        <div id="key_201" class="key key_tab">Tab</div>
+                        <div id="key_202" class="key key_q ut">q</div>
+                        <div id="key_203" class="key key_w nhan">w</div>
+                        <div id="key_204" class="key key_e giua">e</div>
+                        <div id="key_205" class="key key_r tro-trai">r</div>
+                        <div id="key_206" class="key key_t tro-trai">t</div>
+                        <div id="key_207" class="key key_y tro-phai">y</div>
+                        <div id="key_208" class="key key_u tro-phai">u</div>
+                        <div id="key_209" class="key key_i giua">i</div>
+                        <div id="key_210" class="key key_o nhan">o</div>
+                        <div id="key_211" class="key key_p ut">p</div>
+                        <div id="key_212" class="key key_two key_bracket_lft ut">
+                            <div class="key_top">{</div>
+                            <div class="key_bottom">[</div>
+                        </div>
+                        <div id="key_213" class="key key_two key_bracket_rgt ut">
+                            <div class="key_top">}</div>
+                            <div class="key_bottom">]</div>
+                        </div>
+                        <div id="key_214" class="key key_two key_backslash_rgt ut">
+                            <div class="key_top">|</div>
+                            <div class="key_bottom">\</div>
+                        </div>
+                        <div id="key_301" class="key key_caps">Caps</div>
+                        <div id="key_302" class="key key_a ut">a</div>
+                        <div id="key_303" class="key key_s nhan" style="background-color: rgb(255, 255, 255);">s
+                        </div>
+                        <div id="key_304" class="key key_d giua" style="background-color: rgb(255, 255, 255);">d
+                        </div>
+                        <div id="key_305" class="key key_f tro-trai">f</div>
+                        <div id="key_306" class="key key_g tro-trai">g</div>
+                        <div id="key_307" class="key key_h tro-phai">h</div>
+                        <div id="key_308" class="key key_j tro-phai">j</div>
+                        <div id="key_309" class="key key_k giua">k</div>
+                        <div id="key_310" class="key key_l nhan">l</div>
+                        <div id="key_311" class="key key_two key_semicolon ut">
+                            <div class="key_top">:</div>
+                            <div class="key_bottom">;</div>
+                        </div>
+                        <div id="key_312" class="key key_two key_apostrophe ut">
+                            <div class="key_top">"</div>
+                            <div class="key_bottom">'</div>
+                        </div>
+                        <div id="key_313" class="key key_enter">Enter</div>
+                        <div id="key_401" class="key key_shift_lft_long">Shift</div>
+                        <div id="key_403" class="key key_z ut">z</div>
+                        <div id="key_404" class="key key_x nhan">x</div>
+                        <div id="key_405" class="key key_c giua">c</div>
+                        <div id="key_406" class="key key_v tro-trai">v</div>
+                        <div id="key_407" class="key key_b tro-trai">b</div>
+                        <div id="key_408" class="key key_n tro-phai">n</div>
+                        <div id="key_409" class="key key_m tro-phai">m</div>
+                        <div id="key_410" class="key key_two key_comma giua">
+                            <div class="key_top">&lt;</div>
+                            <div class="key_bottom">,</div>
+                        </div>
+                        <div id="key_411" class="key key_two key_period nhan">
+                            <div class="key_top">&gt;</div>
+                            <div class="key_bottom">.</div>
+                        </div>
+                        <div id="key_412" class="key key_two key_slash ut">
+                            <div class="key_top">?</div>
+                            <div class="key_bottom">/</div>
+                        </div>
+                        <div id="key_413" class="key key_shift_rgt">Shift</div>
+                        <div id="key_501" class="key key_ctrl_lft">Ctrl</div>
+                        <div id="key_503" class="key key_alt_lft">Alt</div>
+                        <div id="key_504" class="key key_space"
+                            style="background-color:#a33 !important;color:white !important;"> </div>
+                        <div id="key_505" class="key key_alt_rgt">AltGr</div>
+                        <div id="key_508" class="key key_ctrl_rgt">Ctrl</div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

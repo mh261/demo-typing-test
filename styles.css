@@ -1,0 +1,280 @@
+
+.background{
+    background-color: #777;
+    display: block;
+    text-align: center;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+}
+.textHeader{
+    color: #ffe8b3;
+}
+.textInfo{
+    color: rgb(0, 0, 0);
+}
+.keyword{
+    color: rgb(255, 251, 8);
+}
+.textSeconds{
+    color: rgb(255, 148, 8);
+}
+
+div.kb {
+    overflow: auto;
+    margin: 3px 9px 0 9px;
+    padding: 0;
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 512px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.kb div.key {
+    /*
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+*/
+    border-radius: 5px;
+    position: relative;
+    background-color: #fafafa;
+    line-height: 30px;
+    border: 1px solid #777;
+    margin: 1px;
+    color: #444;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    outline: none;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+div.kb div.key_two {
+    line-height: 12px;
+    font-size: 9pt;
+}
+
+div.kb div.key_two div.key_top {
+    margin-top: 3px;
+    padding-left: 4px;
+    text-align: left;
+}
+
+div.kb div.key_two div.key_bottom {
+    padding-right: 4px;
+    text-align: right;
+}
+
+/*
+div.kb div.sep { clear: both; border: 0px;}
+*/
+
+div.kb div.key_back {
+    width: 66px;
+}
+
+div.kb div.key_back_short {
+    width: 32px;
+}
+
+div.kb div.key_tab {
+    width: 46px;
+}
+
+div.kb div.key_backslash_rgt {
+    width: 50px;
+}
+
+div.kb div.key_enter_down {
+    border-bottom-right-radius: 0;
+    width: 50px;
+}
+
+div.kb div.key_enter_down_middle {
+    display: none;
+}
+
+div.kb div.key_enter_down_bottom {
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 30px;
+    left: 11px;
+    width: 38px;
+    height: 34px;
+    border: 1px solid #777;
+    border-top: 0;
+    background-color: #fff;
+}
+
+div.kb div.key_enter_up {
+    border-radius: 5px 5px 0 0;
+    width: 50px;
+}
+
+div.kb div.key_enter_up_middle {
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    width: 50px;
+    height: 4px;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    background-color: #fff;
+}
+
+div.kb div.key_enter_up_bottom {
+    border-radius: 5px 0 5px 5px;
+    position: absolute;
+    top: 33px;
+    left: -23px;
+    width: 72px;
+    height: 30px;
+    border: 1px solid #777;
+    background-color: #fff;
+}
+
+div.kb div.key_caps {
+    width: 58px;
+}
+
+div.kb div.key_enter {
+    width: 72px;
+}
+
+div.kb div.key_shift_lft {
+    width: 42px;
+    clear: left;
+}
+
+div.kb div.key_shift_lft_long {
+    width: 76px;
+    clear: left;
+}
+
+div.kb div.key_shift_rgt {
+    width: 88px;
+}
+
+div.kb div.key_ctrl_lft {
+    width: 46px;
+}
+
+div.kb div.key_alt_lft {
+    width: 37px;
+    margin-left: 54px;
+}
+
+div.kb div.key_space {
+    width: 182px;
+}
+
+div.kb div.key_alt_rgt {
+    width: 37px;
+}
+
+div.kb div.key_ctrl_rgt {
+    width: 46px;
+    margin-left: 92px;
+}
+
+/* numeric keyboard */
+div.numeric_kb {
+    overflow: auto;
+    margin: 3px 165px 0 277px;
+    padding: 0;
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 186px;
+    float: left;
+}
+
+div.numeric_kb div.key {
+    border-radius: 5px;
+    position: relative;
+    background-color: #fff;
+    line-height: 40px;
+    border: 1px solid #777;
+    margin: 1px;
+    color: #444;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    outline: none;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+div.numeric_kb div.key_numlock {
+    line-height: 20px;
+}
+
+div.numeric_kb div.key_6 {
+    margin-right: 55px;
+}
+
+div.numeric_kb div.key_0 {
+    width: 84px;
+}
+
+/*
+div.numeric_kb div.key_vertical { 
+  border-bottom-left-radius: 0; 
+  border-bottom-right-radius: 0; 
+}
+*/
+div.numeric_kb div.key_vertical div {
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 40px;
+    height: 84px;
+    border: 1px solid #777;
+    border-top: 0;
+    background-color: #fff;
+}
+
+.ut {
+    background: #b3bfff !important;
+}
+
+.nhan {
+    background: #b3e5ff !important;
+}
+
+.giua {
+    background: #b3ffc7 !important;
+}
+
+.tro-trai {
+    background: #ffe8b3 !important;
+}
+
+.tro-phai {
+    background: #feffb3 !important;
+}
+
+@media only screen and (max-width: 640px) {
+    .header h2 {
+        left: 45px;
+    }
+
+    #header h3 {
+        display: none;
+    }
+
+    .container {
+        left: 0;
+        right: 0;
+        width: 100%;
+        transform: none;
+    }
+}
