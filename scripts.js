@@ -1,6 +1,6 @@
-window.addEventListener('load', init);
+window.addEventListener('load', init); 
 
-const currentLevel = 10;
+const currentLevel = 5;
 
 let time = currentLevel;
 let score = 0;
